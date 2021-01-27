@@ -3,46 +3,19 @@
 <head>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+<script src="js/core.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
- <style>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
- </style>
+
 </head>
 <body>
      
-      <div id="terminal" class="content"></div>
-    
-    <script>
-        function yellow(message) {
-        return "[[;green;black]" + message + "]";
-   }
 
-   function glow(message) {
-        return "[[g;white;black]" + message + "]";
-   }
+    <div id="app" class = "center"></div>
+    <div id = "terminal"></div>
 
-
-        $('#terminal').terminal({
-            
-            about: function() {
-                
-                this.echo('Hello i am Sarjid . A professional software Engineer.');
-            },
-            help: function(){
-                 this.echo(yellow(' about --To know about me.'));
-                 this.echo(yellow(' Skill  --To know about my skill'));
-                 this.echo(yellow(' education  --To know about my skill'));
-                 this.echo(yellow(' github  --To get my github link'));
-            },
-            github: function(...args){
-                this.echo(glow('http://stackoverflow.com/'));
-            
-            }
-        }, {
-            checkArity: false,
-            greetings: ''+'Hello I am sarjid.This is my  interactive Resume Plaese Type help to know more.'
-        });
-        </script>
+    <script src = "js/script.js"> </script>    
 </body>
 </html>
