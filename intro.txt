@@ -1,1 +1,2 @@
-Hello , I am sarjid .currently working as a software engineer at ssd-tech.Welcome to my interactive resume.plese type hello
+Hello, welcome to my interactive resume. I am Sarjid, software engineer currently working at Systems Solutions & Development Technologies Ltd. Have Professional experience working with PHP(OOP), JavaScript, jQuery, Rest API, Laravel, RDBMS, SQL, git.
+please type help to know more.
