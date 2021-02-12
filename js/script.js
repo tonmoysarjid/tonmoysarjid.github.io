@@ -26,7 +26,11 @@ function terminal() {
         $('#terminal').addClass('term');
         $('#terminal').terminal({
             help: function() {
-                this.echo(color(res));
+                let len = helpResponse.length;
+                for (let i = 0; i < len; i++) {
+                    this.echo(color(helpResponse[i]));
+                }
+
             }
         }, {
             checkArity: false,
