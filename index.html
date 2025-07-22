@@ -1,28 +1,141 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,shrink-to-fit=no">
-    <meta name="author" content="sarjid">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.terminal.css" />
-    <script src="js/core.js"></script>
-
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
+<body class="bg-gradient-to-br from-white via-indigo-50 to-pink-50 text-gray-800 font-sans">
 
-<body>
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur shadow-sm z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+    <span class="italic text-indigo-600 text-lg">Code, Design, Deploy — Excellence in Every Line.</span>
+      <div class="space-x-6 text-sm font-medium">
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#experience" class="hover:text-indigo-600">Experience</a>
+        <a href="#skills" class="hover:text-indigo-600">Skills</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <div id="app" class="center"></div>
-    <div id="terminal"></div>
+  <!-- Hero Section -->
+  <section class="flex items-center justify-center min-h-screen px-6 pt-24 text-center">
+    <div>
+      <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4">Hi, I’m Sarjid</h1>
+      <p class="text-xl text-gray-600 max-w-xl mx-auto mb-6">
+        Full-Stack Developer | Python & React | 5+ Years
+      </p>
+      <a href="#about" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-full shadow transition">
+        Learn More
+      </a>
+    </div>
+  </section>
 
-    <script src="js/terminal_response.js"></script>
-    <script src="js/script.js"></script>
+  <!-- About Section -->
+  <section id="about" class="py-24 px-6 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-pink-600 mb-6">About Me</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        I’m a Full-Stack Software Engineer with over 5 years of experience, currently working at <strong>TechCare Ltd.</strong> I specialize in building scalable and user-friendly applications using <strong>Python</strong>, <strong>Django</strong>, <strong>FastAPI</strong>, <strong>React</strong>, and <strong>Node.js</strong>.
+        <br><br>
+        My core strength lies in backend development, but I’m equally invested in clean UI/UX and full-cycle product development — from design to deployment. I've contributed to platforms across healthcare, real estate, ride-sharing, and telecom. I also have a background in competitive programming, having solved 350+ problems on URI and UVA, and participated in NCPC 2018 and ACM ICPC Dhaka Regionals (2017 & 2018).
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-24 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-indigo-600 mb-10 text-center">Professional Experience</h2>
+      <div class="space-y-10">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">Software Engineer – TechCare Ltd</h3>
+          <p class="text-sm text-gray-500">March 2024 – Present</p>
+          <p class="text-gray-700">Developed Admin Panel and Client site for DiveThru, a Canadian mental health clinic.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">Software Engineer – TechnoNext Ltd (US Bangla Group)</h3>
+          <p class="text-sm text-gray-500">March 2023 – Feb 2024</p>
+          <p class="text-gray-700">Built a custom in-house Property Management CRM system.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">Software Engineer – Shuttle Technologies Ltd</h3>
+          <p class="text-sm text-gray-500">Feb 2022 – Feb 2023</p>
+          <p class="text-gray-700">Built reporting panel, backend automation services, and promotional systems.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">Engineer, Technology – SSD-TECH</h3>
+          <p class="text-sm text-gray-500">Dec 2019 – Feb 2022</p>
+          <p class="text-gray-700">Implemented dynamic solutions for telecom-focused digital platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-24 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-pink-600 mb-8">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-left text-gray-700 text-base">
+        <div>
+          <h4 class="font-semibold text-indigo-600 mb-2">Frontend</h4>
+          <ul class="list-disc list-inside">
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>CSS / Tailwind CSS</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-indigo-600 mb-2">Backend</h4>
+          <ul class="list-disc list-inside">
+            <li>Python, Django, FastAPI</li>
+            <li>Node.js</li>
+            <li>Laravel</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-indigo-600 mb-2">Database</h4>
+          <ul class="list-disc list-inside">
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>Redis</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-indigo-600 mb-2">DevOps & Tools</h4>
+          <ul class="list-disc list-inside">
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 px-6 bg-gradient-to-r from-teal-500 to-indigo-500 text-white text-center">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+      <!-- <p class="text-lg mb-6">Available for collaboration, freelance, or full-time roles.</p> -->
+      <div class="space-y-2 text-lg">
+        <p>Email: <a href="mailto:tonmoysarjid1@gmail.com" class="underline hover:text-gray-200">tonmoysarjid1@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/tonmoysarjid" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-200">github.com/tonmoysarjid</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/md-sarjid-obedy-43b561179/" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-200">linkedin.com/in/md-sarjid-obedy</a></p>
+      </div>      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-6 bg-white">
+    © 2025 Sarjid.
+  </footer>
+
 </body>
-
 </html>
